@@ -96,24 +96,24 @@ export default function Home() {
                         />
                     ))}
                 </div>
-                <div className="flex flex-col mt-10 ml-5">
+                <div className="flex flex-col mt-10 ml-5 just items-center content-center">
                     <div className="mb-5">
                         <BigButton onClick={handlePredict} text="Predict" />
                     </div>
                     <div className="mb-5">
                         <BigButton onClick={handleClear} text="Clear" />
                     </div>
+                    <div className="mt-52">
+                        <Link href={"https://github.com/vicenteCordero/the-number-is"}>
+                            <Image
+                                src="/github-142-svgrepo-com.svg"
+                                width={100}
+                                height={100}
+                                alt="Github repo"
+                            />
+                        </Link>
+                    </div>
                 </div>
-            </div>
-            <div className="m-10">
-                <Link href={"https://github.com/vicenteCordero/the-number-is"}>
-                    <Image
-                        src="/github-142-svgrepo-com.svg"
-                        width={80}
-                        height={80}
-                        alt="Github repo"
-                    />
-                </Link>
             </div>
         </div>
     );
